@@ -1,0 +1,23 @@
+#alert-green {
+	display:block;
+	padding: .5em .9em .5em .9em;
+	margin-bottom: .5em;
+	background-color: $green;
+	opacity:.5;
+	letter-spacing: .05em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: .95em;
+	color: white;
+	text-align:left;
+	border-bottom: .25em solid rgba(0,0,0,.3);
+}
+#alert-red {
+	@extend #alert-green;
+	background-color: $red;
+}
+.dismissAlert {
+	display:block;
+	float: right;
+	cursor:pointer;
+}

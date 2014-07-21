@@ -1,0 +1,89 @@
+input[type=submit] {
+	-webkit-appearance: none;
+  	-webkit-border-radius: 0px;
+}
+
+input[type=text], textarea {
+	margin-bottom:15px;
+	box-shadow:none;
+	border: 1px solid #999;
+	// border-bottom: 3px solid rgba(0,0,0,.2);
+	padding: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: .95em;
+	color:#666;
+	outline:none;
+	width: 300px;
+}
+
+textarea {
+	height:100px;
+}
+
+input:focus, textarea:focus {
+	border: 1px solid $blue;
+	// border-bottom: 3px solid $dark-green;
+	box-shadow: $blue 0px 1px,
+    $blue 0px 2px,
+    $blue 0px 3px;
+	outline:none;
+}
+
+label {
+	font-weight:600;
+}
+
+.radioButtons {
+	font-family: 'Raleway', sans-serif;
+	font-weight:300;
+	input[type=radio] {
+		display:none;
+	}
+	input[type=radio] + label {
+		display:inline-block;
+		padding: .3em .5em;
+		margin: .18em 0;
+		letter-spacing: .05em;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: .95em;
+		color: #999;
+		text-decoration: none;
+		text-align:center;
+		border: 1px solid #999;
+		background-color: rgba(0,0,0,0);
+	}
+	input[type=radio]:checked + label { 
+		background-color: #999;
+		color:white;
+	}
+}
+
+// .dropdown {
+// 	@extend .button-standard;
+// 	select {		
+// 	outline:none;
+// 	box-shadow:none;
+// 	border:none;
+// 	border-bottom: .25em solid rgba(0,0,0,.3);
+// 	-webkit-appearance: none;
+//   	-webkit-border-radius: 0px;
+// 	font-family: 'Raleway', sans-serif;
+// 	font-weight:300;
+// 	font-size: .95em;
+// 	border-radius:0;
+// 	outline:none;
+// 	box-shadow:none;
+// 	border-radius:none;
+// 	// border-bottom: .25em solid rgba(0,0,0,.3);
+// 	}
+// 	.arrow-down {
+// 	width: 0; 
+// 	height: 0; 
+// 	display:inline-block;
+// 	border-left: 20px solid transparent;
+// 	border-right: 20px solid transparent;
+// 	border-top: 20px solid #f00;
+// }
+// }

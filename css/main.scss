@@ -1,0 +1,219 @@
+// to start watching sass in terminal enter --- $ sass --watch my_css_dir:css
+
+$bkgrnd-gray: #E8E8E8;
+$red: #D3393D;
+$dark-red: #99282C;
+$blue: #475C6B;
+$dark-blue: rgb(49, 63, 74);
+$green:#0FA99B;
+$dark-green:#1C6856;
+
+// order matters! make sure variables are imported before they are called!
+@import 'bourbon/bourbon';
+@import 'nav';
+@import 'mixins';
+@import 'buttons';
+@import 'forms';
+@import 'alerts';
+
+body, html {
+	width: 100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	word-wrap:break;
+}
+
+p, h1, a {
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	margin-bottom: .5em;
+	font-weight: 500;
+	font-size: 2.5em;
+}
+h2 {
+	@extend h1;
+	font-size: 2.25em;
+}
+h3 {
+	@extend h1;
+	font-size: 2em;
+}
+h4 {
+	@extend h1;
+	font-size: 1.75em;
+}
+h5 {
+	@extend h1;
+	// font-size: 1.6em;
+	font-size: 1.5em;
+}
+h6 {
+	@extend h1;
+	// font-size: 1.35em;
+	font-size: 1.25em;
+}
+
+p {
+	font-size: .95em;
+	font-weight:300;
+	margin-bottom:1em;
+}
+
+ul, li {
+	font-size: .95em;
+	font-weight:300;
+}
+
+p a {
+	color: #5D788C;
+	text-decoration:none;
+	font-weight:600;
+}
+p a:hover {
+	color: $red;
+	padding-bottom:1px;
+	border-bottom: 2px solid $red;
+}
+
+hr {
+ 	width:100%;
+	max-width: 1160px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0)); 
+}
+
+#wrapper {
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+
+#bigImage {
+	z-index: -1;
+	position:fixed;
+	min-height:100vh;
+	min-width: 100vw;
+	// background-color: $green;
+	// background-image: url(../images/nyc2-blur.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url(../images/zoolander3.jpg);
+	background-position: center;
+	background-size: cover;
+		text-align:center;
+}
+
+#greeting {
+	min-height:100vh;
+	width:100%;
+}
+
+#introText {
+	max-width:590px;
+	margin:0 auto;
+	text-align:center;
+	h1 {
+		text-align:center;
+		color: rgba(255,255,255,.5);
+		line-height: 1.2em;
+		text-transform: uppercase;
+		letter-spacing: .06em;
+		font-size:2em;
+		font-weight: 500;
+		// text-shadow: 3px 3px 0px rgba(0,0,0,.2);
+		margin:0 auto;
+		border: 1px solid rgba(255,255,255,.5);
+		margin-top: 45%;
+		// margin-left: 4%;
+		padding:14px 18px;
+		float:left;
+	}
+	
+}
+
+.rowWrap {
+	clear: both;
+	width:100%;
+	overflow: auto;
+}
+.col-container {
+	max-width: 1160px;
+	margin:0 auto;
+}
+.col-6 {
+	padding: 50px 0px;
+	padding-left:5%;
+	padding-right:5%;
+	max-width: 1160px;
+	margin:0 auto;
+}
+
+.col-3 {
+	padding: 50px 0px;
+	width: 44%;
+	float: left;
+	margin: 0 3%;
+}
+
+.col-2 {
+	padding: 50px 0px;
+	width: 27.3333333%;
+	float: left;
+	margin: 0 3%;
+}
+
+#introWrap {
+	background-color: $bkgrnd-gray;
+	text-align:center;
+	img {
+		margin-bottom: 25px;
+		width: 88%;
+		opacity: 1;
+	}
+}
+
+#bigImage2 {
+	width:100%;
+	height:600px;
+	background-size: cover;
+	background-image: url(../images/nyc2-light.jpg);
+	background-position: top center;
+}
+
+#stylingWrap {
+	background-color:white;
+}
+
+#gallery {
+	background-color:$bkgrnd-gray;
+	text-align:center;
+}
+
+#footerWrap {
+	background-color:$bkgrnd-gray;
+	img {
+		width: 30px;
+		opacity:.9;
+		align: left;
+	}
+	img:hover {
+		opacity:.4;
+	}
+	p {
+		font-size: .7em;
+	}
+}
+
+@import 'media-queries';
+

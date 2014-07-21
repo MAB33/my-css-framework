@@ -1,0 +1,70 @@
+/*MEDIA QUERIES*/
+/* Large desktop */
+@media (min-width: 1200px) {
+  
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width:501px) and (max-width: 767px) {
+.rowWrap {
+    padding: 50px 0px;
+    clear: both;
+    margin:0 auto;
+    overflow: auto;
+  }
+
+  .col-6, .col-3, .col-2, .col-container {
+    width: 88%;
+    display:block;
+    clear: both;
+    padding: 30px 0px;
+    margin:0 auto;
+  }
+
+  #introText {
+  max-width:85%;
+  margin:0 auto;
+  text-align:center;
+  h1 {
+    margin-top: 45%;
+  }
+  
+} 
+}
+
+/* Landscape phones and down */
+@media (max-width: 500px) {
+  .rowWrap {
+    padding: 50px 0px;
+    clear: both;
+    margin:0 auto;
+    overflow: auto;
+  }
+
+  .col-6, .col-3, .col-2, .col-container {
+    width: 88%;
+    display:block;
+    clear: both;
+    padding: 30px 0px;
+    margin:0 auto;
+  }
+
+#introText {
+  max-width:85%;
+  margin:0 auto;
+  text-align:center;
+  h1 {
+    margin-top: 45%;
+  }
+  
+}
+
+  input[type=text], textarea {
+    width: 95%;
+  }
+}

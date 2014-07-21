@@ -1,0 +1,189 @@
+.button-standard {
+	cursor:pointer;
+	display:inline-block;
+	padding: .5em .9em .4em .9em;
+	margin: .2em;
+	background-color: $blue;
+	// @include border-top-radius(3px);
+	// @include border-bottom-radius(3px);
+	letter-spacing: .05em;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: .95em;
+	color: white;
+	text-decoration: none;
+	text-align:center;
+	border-bottom: .25em solid rgba(0,0,0,.3);
+}
+.button-standard:hover {
+	@extend .button-standard;
+	background-color: #253746;
+	border: none;
+	color: #ccc;
+	border-bottom: .25em solid rgba(0,0,0,.3);
+}
+
+.button-red {
+	@extend .button-standard;
+	background-color: $red;
+}
+.button-red:hover {
+	@extend .button-standard;
+	background-color: #99282C;
+}
+
+.button-green {
+	@extend .button-standard;
+	background-color: $green;
+}
+.button-green:hover {
+	@extend .button-standard;
+	background-color: #1C4F4C;
+}
+
+
+/* BUTTON STYLE 2 */
+.button2-standard {
+	cursor:pointer;
+	display:inline-block;
+	padding: .5em .9em .4em .9em;
+	margin: .2em;
+	letter-spacing: .05em;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: .95em;
+	color: $dark-blue;
+	text-decoration: none;
+	text-align:center;
+	border: 1px solid $blue;
+	background-color: rgba(0,0,0,0);
+	box-shadow: $dark-blue 1px 1px,
+    $dark-blue 2px 2px,
+    $dark-blue 3px 3px,
+    $dark-blue 4px 4px,
+    $dark-blue 5px 5px,
+    $dark-blue 6px 6px;
+}
+.button2-standard:hover {
+	@extend .button2-standard;
+	border-top: 1px solid $blue;
+	border-left: 1px solid $blue;
+	background-color: $blue;
+	color:white;
+}
+
+.button2-red {
+	@extend .button2-standard;
+	color: $dark-red;
+	border: 1px solid $dark-red;
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: $dark-red 1px 1px,
+    $dark-red 2px 2px,
+    $dark-red 3px 3px,
+    $dark-red 4px 4px,
+    $dark-red 5px 5px,
+    $dark-red 6px 6px;
+}
+.button2-red:hover {
+	@extend .button2-red;
+	border-top: 1px solid $red;
+	border-left: 1px solid $red;
+	background-color: $red;
+	color:white;
+}
+
+.button2-green {
+	@extend .button2-standard;
+	color:$dark-green;
+	border: 1px solid $dark-green;
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: $dark-green 1px 1px,
+    $dark-green 2px 2px,
+    $dark-green 3px 3px,
+    $dark-green 4px 4px,
+    $dark-green 5px 5px,
+    $dark-green 6px 6px;
+}
+.button2-green:hover {
+	@extend .button2-green;
+	border-top: 1px solid $green;
+	border-left: 1px solid $green;
+	background-color: $green;
+	color:white;
+}
+
+
+/* BUTTON STYLE 3 */
+.button3-standard {
+	cursor:pointer;
+	display:inline-block;
+	padding: .5em .9em .4em .9em;
+	margin: .2em;
+	letter-spacing: .05em;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: .95em;
+	color: $dark-blue;
+	text-decoration: none;
+	text-align:center;
+	border: 1px solid $blue;
+	border-bottom: 3px solid $dark-blue;
+	background-color: rgba(0, 0, 0, 0);
+}
+// .button3-standard:hover {
+// 	@extend .button3-standard;
+// 	background-color: $blue;
+// 	color:white;
+// }
+.button3-standard-hover {
+	@extend .button3-standard;
+	background-color: $blue;
+	color:white;
+}
+.button3-red {
+	@extend .button3-standard;
+	color:$dark-red;
+	border: 1px solid $dark-red;
+	border-bottom: 3px solid $dark-red;
+	background-color: rgba(0, 0, 0, 0);
+}
+// .button3-red:hover {
+// 	@extend .button3-red;
+// 	color:white;
+// 	background-color: $red;
+// 	border: 1px solid $red;
+// 	border-bottom: 3px solid $dark-red;
+// 	font-weight:400;
+// }
+.button3-red-hover {
+	@extend .button3-red;
+	color:white;
+	background-color: $red;
+	border: 1px solid $red;
+	border-bottom: 3px solid $dark-red;
+}
+
+.button3-green {
+	@extend .button3-standard;
+	color:$dark-green;
+	border: 1px solid $dark-green;
+	border-bottom: 3px solid $dark-green;
+	background-color: rgba(0, 0, 0, 0);
+}
+// .button3-green:hover {
+// 	@extend .button3-green;
+// 	color:white;
+// 	background-color: $green;
+// 	border: 1px solid $green;
+// 	border-bottom: 3px solid $dark-green;
+// }
+.button3-green-hover {
+	@extend .button3-green;
+	color:white;
+	background-color: $green;
+	border: 1px solid $green;
+	border-bottom: 3px solid $dark-green;
+}
