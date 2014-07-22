@@ -1,4 +1,4 @@
-$link-font: .9em;
+$link-font: .92em;
 $nav-padding-top-bottom: 12px;
 $nav-padding-sides: 20px;
 
@@ -16,6 +16,8 @@ nav {
 		padding:13px;
 		letter-spacing: .05em;
 		text-transform: uppercase;
+		font-size: $link-font;
+		font-weight: 600;
 	}
 	ul {
 		float: right;

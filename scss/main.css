@@ -1,0 +1,43 @@
+/*
+Syntax error: Invalid CSS after "...ide-margin:0 3%": expected selector or at-rule, was ":"
+        on line 10 of css/main.scss
+
+5: $dark-red: #99282C;
+6: $blue: #475C6B;
+7: $dark-blue: rgb(49, 63, 74);
+8: $green:#0FA99B;
+9: $dark-green:#1C6856;
+10: $col-side-margin:0 3%:
+11: 
+12: // order matters! make sure variables are imported before they are called!
+13: @import 'bourbon/bourbon';
+14: @import 'nav';
+15: @import 'mixins';
+
+Backtrace:
+css/main.scss:10
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/scss/parser.rb:1312:in `expected'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/scss/parser.rb:1248:in `expected'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/scss/parser.rb:42:in `parse'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/engine.rb:409:in `_to_tree'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/engine.rb:274:in `render'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:186:in `each'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/plugin/compiler.rb:221:in `watch'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/plugin.rb:108:in `method_missing'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/exec.rb:509:in `watch_or_update'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/exec.rb:346:in `process_result'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/exec.rb:43:in `parse'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/lib/sass/exec.rb:22:in `parse!'
+/Users/test/.rvm/gems/ruby-2.1.1/gems/sass-3.3.10/bin/sass:13:in `<top (required)>'
+/Users/test/.rvm/gems/ruby-2.1.1/bin/sass:23:in `load'
+/Users/test/.rvm/gems/ruby-2.1.1/bin/sass:23:in `<main>'
+/Users/test/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/test/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...ide-margin:0 3%\": expected selector or at-rule, was \":\"\A         on line 10 of css/main.scss\A \A 5: $dark-red: #99282C;\A 6: $blue: #475C6B;\A 7: $dark-blue: rgb(49, 63, 74);\A 8: $green:#0FA99B;\A 9: $dark-green:#1C6856;\A 10: $col-side-margin:0 3%:\A 11: \A 12: // order matters! make sure variables are imported before they are called!\A 13: @import 'bourbon/bourbon';\A 14: @import 'nav';\A 15: @import 'mixins';"; }
